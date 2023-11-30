@@ -1,0 +1,158 @@
+ /* style.css */
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("85.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: left;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+address {
+    font-family: 'Kelly Slab';
+    margin-right: 20px; /* Dostosuj marginesy w zależności od potrzeb */
+    font-size: 20px; /* Dostosuj rozmiar czcionki w zależności od potrzeb */
+}
+
+nav {
+    font-size: large;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Kelly Slab';
+    font-size: 43px;
+    color: #fff;
+    white-space: nowrap;
+    margin-right: auto;
+    transition: font-size 0.3s ease;
+}
+
+/* Nowe style dla responsywności */
+@media screen and (max-width: 767px) {
+    header {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    address {
+        font-size: 14px; /* Dodaj to, aby dostosować rozmiar czcionki dla adresu */
+    }
+
+    main {
+        padding-top: 80px;
+    }
+}
+
+main {
+    max-width: 1200px;
+    height: auto;
+    margin: 180px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(26, 29, 212, 0.836);
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+address {
+    font-family: 'Kelly Slab';
+    margin-right: 40px;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+p {
+    font-size: 25px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+ol {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
+}
+
+li {
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 71%, var(--l));
+    --c2: hsl(var(--h), 71%, var(--l2));
+
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+li::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+h3 {
+    font-size: 25px;
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1
+}
