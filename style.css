@@ -27,7 +27,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-address {
+#mail {
     font-family: 'Kelly Slab';
     margin-right: 20px; /* Dostosuj marginesy w zależności od potrzeb */
     font-size: 20px; /* Dostosuj rozmiar czcionki w zależności od potrzeb */
@@ -66,7 +66,7 @@ h1 {
         font-size: 28px;
     }
 
-    address {
+   #mail{
         font-size: 14px; /* Dodaj to, aby dostosować rozmiar czcionki dla adresu */
     }
 
